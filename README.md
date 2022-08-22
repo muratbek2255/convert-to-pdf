@@ -13,7 +13,7 @@ docker-compose build
 2) Запустить контейнер
 docker-compose up
 3) Перейти по адресу
-http://127.0.0.1:8000/api/v1/swagger/
+http://0.0.0.0:8000/api/v1/
 Разработка с Docker
 4) Сделать форк репозитория
 5) Клонировать репозиторий
@@ -21,7 +21,7 @@ git clone ссылка_сгенерированная_в_вашем_репози
 6) В корне проекта создать .env
 DEBUG=1
 SECRET_KEY=secret_key
-DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+DJANGO_ALLOWED_HOSTS=0.0.0.0:8000 [::1]
 
 # Data Base
 POSTGRES_DB=example(postgres)
